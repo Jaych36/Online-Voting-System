@@ -1,0 +1,68 @@
+
+<html>
+<head>
+    <title>Online Voting System Registration</title>
+    
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <h1 align="center">
+        Online Voting System 
+    
+    </h1>
+    <hr>
+    
+        <marquee bgcolor="white">
+            <p>
+                Registration Form For Voting <br>
+            </p>
+        </marquee>
+        <marquee bgcolor="pink">
+            <p>
+                DEVELOPED BY JAY & JYOTI <br>
+            </p>
+        </marquee>
+        
+    <form action="../api/register.php" method="post">
+
+      <table border="3" align="center">
+          <tr> <td>
+    firstname <td> <input type="text" maxlength="15" required> </td></tr>
+      <tr> <td>
+       midname <td><input type="text" maxlength="10"> </td></tr>
+       <tr> <td>
+     lastname <td><input type="text" maxlength="10" required> </td></tr>
+     <tr> <td>
+      emailid <td> <input type="varchar" maxlength="25"   required> </td></tr>
+      <tr> <td> 
+      username <td> <input type="varchar"   maxlength="10"  required> </td></tr>
+      <tr> <td> 
+    password <td>  <input type="varchar" maxlength="15"   required> </td></tr>
+      <tr> <td> 
+      confirmpassword <td>  <input type="varchar" maxlength="15"   required> </td></tr>
+      <tr> <td> 
+      gender <td>  <input type="text" maxlength="6"> </td></tr>
+      <tr> <td> 
+      address <td>  <input type="text" maxlength="25" required> </td></tr>
+      <tr> <td> 
+      voteridno<td> <input type="int" maxlength="10" required> </td></tr>
+      <tr> <td> 
+     mobilenumber<td>  <input type ="int"  maxlength="10" required > </td></tr>
+     <tr> <td> 
+        <select name="role">
+                        <option value="1">Voter </option>
+            <option value="2">Candidate </option> 
+      </select>
+    
+                <button
+                style=" background-color: greenyellow";
+                 >SUBMIT</button>
+
+
+
+
+</form>
+</body>
+</html>
