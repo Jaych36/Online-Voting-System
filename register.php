@@ -3,26 +3,25 @@
 include("connect.php");
  
 
-    $firstname = $_POST['firstname'];
-    $midname = $_POST['midname'];
-    $lastname = $_POST['lastname'];
+    $name = $_POST['name'];
     $emailid = $_POST['emailid'];
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $confirmpassword = $_POST['confirmpassword'];
+    $cpassword = $_POST['cpassword'];
     $gender = $_POST['gender'];
     $address = $_POST['address'];
-    $voteridno = $_POST['voteridno'];
-    $mobilenumber = $_POST['mobilenumber'];
+     $mobile = $_POST['mobile'];
     $role = $_POST['role'];
 
  
 
-if($password==$confirmpassword)
+if($password==$cpassword)
 {
     $insert = mysqli_query($connect,"INSERT INTO details
-     (firstame,midname,lastname,emailid,username,password,confirmpassword,gender,address,voteridno,mobilenumber,role,status,votes) 
-    VALUES('$firstname','$midname','$lastname','$emailid','$username','$password','$confirmpassword','$gender','$address','$voteridno','$mobilenumber','$role',0,0)");
+     (name,emailid,username,password,cpassword,gender,address,mobile,role,status,votes) 
+    VALUES('$name','$emailid','$username','$password','$cpassword',
+    '$gender','$address','$mobile','$role',0,0)");
+    
 
     {
         if($insert)
@@ -50,3 +49,18 @@ else{
 }
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
