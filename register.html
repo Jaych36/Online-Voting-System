@@ -25,40 +25,35 @@
             </p>
         </marquee>
         
-    <form action="../api/register.php" method="post">
+    <form action="../api/register.php" method="POST">
 
       <table border="3" align="center">
           <tr> <td>
-    firstname <td> <input type="text" maxlength="15" required> </td></tr>
+    Name<td> <input type="text" name="name" value="" maxlength="15" required> </td></tr>
       <tr> <td>
-       midname <td><input type="text" maxlength="10"> </td></tr>
-       <tr> <td>
-     lastname <td><input type="text" maxlength="10" required> </td></tr>
-     <tr> <td>
-      emailid <td> <input type="varchar" maxlength="25"   required> </td></tr>
+       
+      Email id <td> <input type="varchar" name="emailid" value="" maxlength="25"   required> </td></tr>
       <tr> <td> 
-      username <td> <input type="varchar"   maxlength="10"  required> </td></tr>
+      Username <td> <input type="varchar" name="username" value="" maxlength="10"  required> </td></tr>
       <tr> <td> 
-    password <td>  <input type="varchar" maxlength="15"   required> </td></tr>
+    Password <td>  <input type="varchar" name="password" value="" maxlength="15"   required> </td></tr>
       <tr> <td> 
-      confirmpassword <td>  <input type="varchar" maxlength="15"   required> </td></tr>
+      Confirm password <td>  <input type="varchar" name="cpassword" value="" maxlength="15"   required> </td></tr>
       <tr> <td> 
-      gender <td>  <input type="text" maxlength="6"> </td></tr>
+      Gender <td>  <input type="text" name="gender" value="" maxlength="6"> </td></tr>
       <tr> <td> 
-      address <td>  <input type="text" maxlength="25" required> </td></tr>
+      Address <td>  <input type="text" name="address" value=""  maxlength="25" required> </td></tr>
       <tr> <td> 
-      voteridno<td> <input type="int" maxlength="10" required> </td></tr>
-      <tr> <td> 
-     mobilenumber<td>  <input type ="int"  maxlength="10" required > </td></tr>
+      
+     Mobile Number<td>  <input type ="varchar" name="mobile" value="" maxlength="10" required > </td></tr>
      <tr> <td> 
         <select name="role">
                         <option value="1">Voter </option>
             <option value="2">Candidate </option> 
       </select>
     
-                <button
-                style=" background-color: greenyellow";
-                 >SUBMIT</button>
+                <button type="submit" style=" background-color: greenyellow"; >
+                    SUBMIT</button>
 
 
 
