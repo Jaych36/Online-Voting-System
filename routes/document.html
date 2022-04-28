@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="../api/documents.php" method="POST" enctype="multipart/form-data">
+
+    Name Of Voter<td> <input type="text" name="name" value="" maxlength="15" required> </td></tr>
+      <tr> <td>
+<p>Upload Voter Photo!!!</p>
+	<label>Upload Your Image
+		<input type="file" name="pic" />
+	</label> <br>   <br>
+
+    <p>Upload Voter Aadhar Card!!!</p>
+	<label>Upload Your Aadhar Card
+		<input type="file" name="aadhar" />
+	</label>  <br> <br>
+
+    <p>Upload Voter's Voter Id Card!!!</p>
+	<label>Upload Your Voter Id Card
+		<input type="file" name="Voterid" />
+	</label>  <br> <br>
+
+    <p>Upload Other Identification Id!!!</p>
+	<label>Upload Your PAN Card/Driving License/Electicity Bill
+		<input type="file" name="otherid" />
+	</label> <br> <br>
+    <button type="submit" style=" background-color: greenyellow"; >
+        SUBMIT</button>
+    </form>
+</body>
+</html>

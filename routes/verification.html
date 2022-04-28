@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Verification For Voting Process!</title>
+    </head>
+<body>
+   
+    
+    <h1 align="center">
+        All Details Should Be Filled By Admin/Adminstrator Only!
+    </h1>
+    
+    <form action="../api/register2.php" method="POST">
+
+
+    <p>Is Voter Have Proper Identification Id's ?</p>
+
+
+<input type="radio"  name="identification" >
+<label for="YES">YES</label>
+<input type="radio" name="identification">
+<label for="NO">NO</label>
+
+
+    <p>Voter Age Is 18+ Or 18 ?</p>
+
+    <input type="radio"  name="age">
+<label for="YES">YES</label>
+<input type="radio" name="age" >
+<label for="NO">NO</label>
+
+    <p>Current Areas In Which Voting Is Going On. </p>
+
+    <select name="area">
+            
+        <option value="1">Indore</option>
+        <option value="2">Bhopal</option> 
+        <option value="2">Jabalpur</option> 
+  </select>
+    <p>Can Voter Is Eligible To Vote ? </p>
+      
+    <input type="radio" name="eligible">
+    <label for="YES">YES</label>
+    <input type="radio"  name="eligible" >
+    <label for="NO">NO</label>  <br> <br>
+
+        
+       
+    
+                <button type="submit" style=" background-color: greenyellow"; >
+                    SUBMIT</button>
+
+
+</div>
+
+</form>
+</body>
+</html>

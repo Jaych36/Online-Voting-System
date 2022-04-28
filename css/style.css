@@ -1,0 +1,48 @@
+ body {
+
+    margin: 0;
+    padding: 0;
+    background-color:lightcyan;
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+
+.login-form {
+    width: 350px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     position: absolute;
+
+
+
+}
+
+
+
+.login-form input {
+
+    background-color:aqua;
+    width:100px;
+    padding: 8px 45px;
+    border: 0;
+    outline:none;
+    border-radius: 24px;
+}
+.login-form button
+{
+    color:black;
+ font-size: 15px;
+ font-weight: bold;
+ margin: 20px 0;
+ padding: 8px 40px;
+ width: 50%;
+ border-radius: 24px;
+ border: 10;
+ background-color:greenyellow
+
+}
+
+
